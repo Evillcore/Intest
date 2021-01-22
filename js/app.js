@@ -353,6 +353,125 @@ new Swiper('.main-slider__container', {
     //	el: '.swiper-scrollbar',
     //},
 });
+new Swiper('.destinations__slider', {
+
+    /* effect: 'fade', */
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+
+    observer: true,
+    observeParents: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    autoHeight: true,
+    speed: 800,
+    //touchRatio: 0,
+    //simulateTouch: false,
+    loop: true,
+    //preloadImages: false,
+    //lazy: true,
+    // Dotts
+    //pagination: {
+    //	el: '.slider-quality__pagging',
+    //	clickable: true,
+    //},
+    // Arrows
+    navigation: {
+        nextEl: '.destinations__button-next',
+        prevEl: '.destinations__button-prev',
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            autoHeight: true,
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1268: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    },
+
+    on: {
+        lazyImageReady: function () {
+            ibg();
+        },
+    }
+    // And if we need scrollbar
+    //scrollbar: {
+    //	el: '.swiper-scrollbar',
+    //},
+});
+new Swiper('.reviews__slider', {
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+    speed: 800,
+    //touchRatio: 0,
+    //simulateTouch: false,
+    loop: true,
+    //preloadImages: false,
+    //lazy: true,
+    // Dotts
+    //pagination: {
+    //	el: '.slider-quality__pagging',
+    //	clickable: true,
+    //},
+    // Arrows
+    navigation: {
+        nextEl: '.reviews__button-next',
+        prevEl: '.reviews__button-prev',
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            autoHeight: true,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        1268: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
+
+    on: {
+        lazyImageReady: function () {
+            ibg();
+        },
+    }
+    // And if we need scrollbar
+    //scrollbar: {
+    //	el: '.swiper-scrollbar',
+    //},
+});
 
 
 
